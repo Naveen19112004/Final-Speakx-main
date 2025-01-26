@@ -12,7 +12,7 @@ const MainApp = () => {
 
   const fetchQuestions = async (searchTerm, page) => {
     try {
-      const response = await axios.get(`http://localhost:7000/${searchTerm}`, {
+      const response = await axios.get(`https://final-speakx-main.onrender.com/${searchTerm}`, {
         params: { page, limit: 10 },
       });
       setQuestions(response.data.data);

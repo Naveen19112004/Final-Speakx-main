@@ -5,7 +5,7 @@ const Question = require("./models/speakx.models");
 require("dotenv").config();
 
 const app = express();
-app.use(cors({ origin: "http://localhost:3001" }));
+app.use(cors({ origin: "https://final-speakx-l8pe.onrender.com" }));
 
 const uri = process.env.MONGO_URI;
 mongoose
